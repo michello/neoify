@@ -1,7 +1,7 @@
 var elems = document.getElementsByTagName("a");			// gets all the "ahref" items
 var arr = [];											// creates array though we should have a database for this
 
-for (var i = 0, i< elems.length; i++) {					// loops through all the items
+for (var i = 0; i < elems.length; i++) {					// loops through all the items
 	if (elems[i].style.textDecoration != "none") {		// skips the "ahref" items with textDecoration of none because council links have this attribute
 		if (elems[i].parentNode.nodeName == "TD") {
 			elems[i].parentNode.innerText;				// gets the inner text
@@ -14,3 +14,5 @@ for (var i = 0, i< elems.length; i++) {					// loops through all the items
 		}
 	}
 };
+
+console.log(arr);

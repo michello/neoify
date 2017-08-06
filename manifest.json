@@ -5,16 +5,13 @@
   "content_scripts": [
   	{
   		"matches": [
-      		"*://www.neopets.com/guilds/guild_board.phtml?id=4168178/*"
+      		"http://www.neopets.com/guilds/guild_board.phtml?id=4168178*"
     	],
-    	"js": ["jquery-2.1.3.min.js", "app.js"]
+    	"js": ["content.js"]
   	}
   ],
   "browser_action": {
   	"default_icon": "icon.png"
-  },
-  "background": {
-  	"scripts": ["background.js"]
   },
   "permissions": [
   	"storage"

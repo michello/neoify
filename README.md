@@ -10,6 +10,7 @@ a neopets application which gives neoifications
 * login check error message: checks to see if the user is logged in or not
 * filter search: checks to see if your message contains any non neo-friendly words and highlights them for you before you submit so you don't lose your message
 * a&c notification: alerts people when a&c occurs
+* guild ad board notifier: alerts when the guild ad board falls too below down 
 
 
 ## how to use:

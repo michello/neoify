@@ -14,7 +14,7 @@ a neopets application which gives neoifications
 
 
 ## how to use:
-1. download the folder/repo
+1. download the folder/repo (unzip the file into a folder!)
 ![alt tag](img/screenshots/step_1.png)
 2. navigate to **chrome://extensions** in your chrome browser
 ![alt tag](img/screenshots/step_2.png)

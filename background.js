@@ -2,7 +2,7 @@ let guildLink = 'http://www.neopets.com/guilds/guild_board.phtml?id=4168178';
 
 $(function(){
 	getPosts();
-	setInterval(getPosts, 0);
+	setInterval(getPosts, 60000);
 });
 
 function getPosts() {

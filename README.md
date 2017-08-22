@@ -1,4 +1,4 @@
-# neoify ![logo](img/neoify-48.png)
+# ![logo](img/neoify-48.png) neoify 
 a neopets application which gives neoifications
 
 ## caveats

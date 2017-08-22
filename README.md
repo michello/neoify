@@ -1,6 +1,9 @@
 # ![logo](img/neoify-48.png) neoify 
 a neopets application which gives neoifications
 
+## updates
+* **08/22/17**: first working prototype!
+
 ## caveats
 * When you first use the extension, you might be flooded with notifications of past posts. This is necessary since the extension's local storage needs to be loaded with all the existing posts for it to have posts to compare with.
 * The extension also assumes you need to be signed into Neopets. I'll probably create some error message to check to see if the user is signed in or not in the future. 

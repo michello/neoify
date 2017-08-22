@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "neoify",
+  "version": "0.1",
+  "description": "Alerts you when someone makes a post on the guild message board!",
+  "background": {
+  	"scripts": ["jquery.js", "background.js"]
+  },
+  
+  "icons": {
+    "48": "img/neoify-48.png",
+    "64": "img/neoify-64.png",
+    "128": "img/neoify-128.png"
+  },
+  "permissions": [
+  	"http://www.neopets.com/guilds/guild_board.phtml?id=4168178",
+    "storage",
+    "notifications"
+  ]
+}

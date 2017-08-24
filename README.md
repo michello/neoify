@@ -16,11 +16,11 @@ a neopets application which gives neoifications
 ## how to use:
 1. download the folder/repo (unzip the file into a folder!)
 ![alt tag](img/screenshots/step_1.png)
-2. navigate to **chrome://extensions** in your chrome browser
+2. navigate to ```chrome://extensions``` in your chrome browser
 ![alt tag](img/screenshots/step_2.png)
-3. check the check box for **developer mode** in the upper right hand corner
+3. check the check box for ```developer mode``` in the upper right hand corner
 ![alt tag](img/screenshots/step_3.png)
-4. select **load unpacked extension...** Remember to unzip the file!
+4. select ```load unpacked extension...``` Remember to unzip the file!
 ![alt tag](img/screenshots/step_4.png)
 5. select the folder we downloaded in Step #1
 ![alt tag](img/screenshots/step_5.png)

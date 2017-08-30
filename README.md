@@ -2,7 +2,7 @@
 a neopets application which gives neoifications
 
 ## updates
-* **08/22/17**: first working prototype!
+* `08/22/17`: first working prototype!
 
 ## caveats
 * When you first use the extension, you might be flooded with notifications of past posts. This is necessary since the extension's local storage needs to be loaded with all the existing posts for it to have posts to compare with.
@@ -14,6 +14,8 @@ a neopets application which gives neoifications
 * filter search: checks to see if your message contains any non neo-friendly words and highlights them for you before you submit so you don't lose your message
 * a&c notification: alerts people when a&c occurs
 
+## resources
+* `filter search` ![Real Time Text Input Filter tutorial Program Textarea Javascript HTML Tutorial]https://www.youtube.com/watch?v=ump6O8yFWkY
 
 ## how to use:
 1. download the folder/repo

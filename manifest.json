@@ -14,6 +14,7 @@
   },
   "permissions": [
   	"http://www.neopets.com/guilds/guild_board.phtml?id=4168178",
+    "http://www.neopets.com/*",
     "storage",
     "notifications"
   ]

@@ -40,12 +40,12 @@ $('.highlightTextarea-highlighter').keyup(function(){
 $('form').submit(function(){
 	// event.preventDefault();
 	// alert($('.highlightTextarea-highlighter').text());
-	$('textarea[name="message_text"]').val = $('.highlightTextarea-highlighter').text();
-	// alert($('textarea[name="message_text"]').val());
+	$('textarea[name="message_text"]').val() = $('.highlightTextarea-highlighter').text();
+	// alert($('textarea[name="message"]').val());
 	// $('textarea').innerText = $('.highlightTextarea').innerText;
 	// alert($('textarea').val());
-	// return (true);
-	return($('.highlightTextarea-highlighter').text());
+	return (true);
+	// return($('.highlightTextarea-highlighter').text());
 });
 
 

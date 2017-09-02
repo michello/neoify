@@ -10,6 +10,7 @@
   "content_scripts": [
     {
       "matches": ["*://www.neopets.com/guilds/guild_board.phtml?id=4168178&action=2*"],
+      /* "matches": ["*://www.neopets.com/neoboards/topic.phtml?topic=158915517*"], */
       "css": ["keylogger-test/jquery-ui.min.css", "keylogger-test/jquery.highlighttextarea.min.css"],
       "js": ["jquery.js", "keylogger-test/jquery-ui.min.js", "keylogger-test/jquery.highlighttextarea.js", "keylogger-test/keylogger.js"],
       "run_at": "document_end"

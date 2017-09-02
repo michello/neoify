@@ -18,14 +18,14 @@ a neopets application which gives neoifications
 * `filter search` ![Real Time Text Input Filter tutorial Program Textarea Javascript HTML Tutorial]https://www.youtube.com/watch?v=ump6O8yFWkY
 
 ## how to use:
-1. download the folder/repo
+1. Download the folder/repo.
 ![alt tag](img/screenshots/step_1.png)
-2. navigate to **chrome://extensions** in your chrome browser
+2. Navigate to `chrome://extensions` in your chrome browser.
 ![alt tag](img/screenshots/step_2.png)
-3. check the check box for **developer mode** in the upper right hand corner
+3. Check the check box for `developer mode` in the upper right hand corner.
 ![alt tag](img/screenshots/step_3.png)
-4. select **load unpacked extension...** Remember to unzip the file!
+4. Select `load unpacked extension...` Remember to unzip the file!
 ![alt tag](img/screenshots/step_4.png)
-5. select the folder we downloaded in Step #1
+5. Select the folder we downloaded in Step #1.
 ![alt tag](img/screenshots/step_5.png)
-6. select ok and viola! neoify is officially running :)
+6. Select `ok` and viola! Neoify is officially running :)

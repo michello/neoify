@@ -3,7 +3,7 @@ let rightSide = $('<div/>', {id: 'rightSide'});
 let statusMessage = $('<div/>', { id: 'status'});
 let highlight = $('<span/>', {id: 'highlight'});
 let statusHeader = $('<h1/>', {id: 'statusHeader'});
-let curseWords = ['uncle', 'shit', 'fuck', 'semen', 'rape', 'cum', 'weed', 'nuts', 'anal', 'meth', 'ball', 'ass', 'stupid as', 'kill', 'hole', 'base', 'nigger', 'bad as', 'my space', 'do it', 'expression', 'sex', 'screw', 'crack', 'vagina'];
+let curseWords = ['uncle', 'shit', 'fuck', 'semen', 'rape', 'cum', 'weed', 'nuts', 'anal', 'meth', 'ball', 'ass', 'stupid as', 'kill', 'hole', 'base', 'nigger', 'bad as', 'my space', 'do it', 'expression', 'sex', 'screw', 'crack', 'vagina', 'yuri', 'yaoi'];
 
 $("textarea").css({"float": "left", "width": "340px"});
 $(rightSide).css({"float": "left", "width": "200px", "height": "300px"});

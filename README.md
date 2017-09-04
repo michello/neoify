@@ -3,7 +3,7 @@ A neopets application which gives neoifications.
 
 ## current features:
 * ```Message Board Notifier``` & ```Guild Ad Board Notifier```: When someone makes a post in the guild or when the guild ad board drops below midway (you can change this as you see fit) on the guild page, you'll get a notification! Let me know if you don't the guild ad board notifier.
-* ```Filter search```: When you get on the guild board, there is a text div to the right of the space where you type in. There is a status message on top that says, "YOUR MESSAGE IS GUCCI" if it's neofriendly but this will change to say, "YOUR MESSAGE ISN'T GOOD!", if it detects you typed a non-neofriendly word/phrase. 
+* ```Filter search```: When you get on the guild board, there is a text div to the right of the space where you type in. There is a status message on top that says, "YOUR MESSAGE IS GUCCI" if it's neofriendly but this will change to say, "YOUR MESSAGE ISN'T GOOD!", if it detects you typed a non-neofriendly word/phrase. The application will also mimic what you're typing to the right and highlight parts that are non-neofriendly!
 	[![https://gyazo.com/86972f8f2d0bb3b9431d3606f3f6d9be](https://i.gyazo.com/86972f8f2d0bb3b9431d3606f3f6d9be.gif)](https://gyazo.com/86972f8f2d0bb3b9431d3606f3f6d9be)
 	- So far, the following words it detects are as follows:
 		* 'uncle', 'shit', 'fuck', 'semen', 'rape','cum', 'weed', 'nuts', 'anal', 'meth', 'ball',	'ass', 'stupid as'

@@ -1,22 +1,21 @@
 {
   "manifest_version": 2,
   "name": "neoify",
-  "version": "0.1",
-  "description": "Alerts you when someone makes a post on the guild message board!",
-  /*
+  "version": "0.2",
+  "description": "Alerts you when someone makes a post on the guild message board & checks for your profanity on guild message board.",
   "background": {
-  	"scripts": ["jquery.js", "background.js"]
-  },*/
+  	"scripts": ["scripts/jquery.js", "scripts/background.js"]
+  },
+  
   "content_scripts": [
     {
       "matches": ["*://www.neopets.com/guilds/guild_board.phtml?id=4168178&action=2*"],
-      /* "matches": ["*://www.neopets.com/neoboards/topic.phtml?topic=158915517*"], */
-      "css": ["keylogger-test/jquery-ui.min.css", "keylogger-test/jquery.highlighttextarea.min.css"],
-      "js": ["jquery.js", "keylogger-test/jquery-ui.min.js", "keylogger-test/jquery.highlighttextarea.js", "keylogger-test/keylogger.js"],
+      "css": ["style/custom.css"],
+      "js": ["scripts/jquery.js", "scripts/jquery.highlight.js", "scripts/profanity-check.js"],
       "run_at": "document_end"
     }
-],
-  
+  ],
+
   "icons": {
     "48": "img/neoify-48.png",
     "64": "img/neoify-64.png",
@@ -24,7 +23,6 @@
   },
   "permissions": [
   	"http://www.neopets.com/guilds/guild_board.phtml?id=4168178",
-    "http://www.neopets.com/*",
     "storage",
     "notifications"
   ]

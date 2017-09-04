@@ -1,9 +1,46 @@
+let boardLink = 'http://www.neopets.com/neoboards/boardlist.phtml?board=8';
 let guildLink = 'http://www.neopets.com/guilds/guild_board.phtml?id=4168178';
 
 $(function(){
-	getPosts();
+	setInterval(getBoards, 60000);
 	setInterval(getPosts, 60000);
 });
+
+function getBoards(){
+	$.get(boardLink, function(data) {
+		var elems = $(data).find("span[style='font-weight:normal;']");
+		for (var i = 0; i < elems.length; i++) {
+			if (elems[i].innerText.includes("MU x HO")) {
+				let link = elems[i].parentNode; //attr["href"];
+				$(link).attr("href");
+				if (i > 20) {
+					notify2($(link).attr("href"));
+					// console.log(elems[i].innerText);
+				} 
+				// console.log(i);
+			} else {
+				notify2($(link).attr("href"));
+			}
+			
+		}
+	});
+}
+
+function notify2(board) {
+
+	var notification = new Notification("MuxHo", {
+		icon: "img/neoify-128.png",
+		body: "The guild board fell below too low!"
+	});
+
+	notification.onclick = function() {
+
+		window.open("http://www.neopets.com/neoboards/" + board);
+	}
+
+}
+
+
 
 function getPosts() {
 	$.get(guildLink, function(data) {
@@ -24,12 +61,12 @@ function getPosts() {
 							notify(post);
 						};
 
-						/*
+						
 						let user = elems[i].innerText;	// username
 						let timeDate = elems[i].parentNode.innerText.substr(-17); // date & time
 						let time = timeDate.substring(0, 6);
 						let date = timeDate.substring(6);
-						*/
+						
 					}
 				}
 			}
@@ -54,6 +91,7 @@ function checksIfExists(currPost) {
   	return(false);
 
 }
+
 
 function notify(thePost) {
 

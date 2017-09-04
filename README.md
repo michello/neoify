@@ -19,7 +19,8 @@ A neopets application which gives neoifications.
 * ```Login check error message```: checks to see if the user is logged in or not
 * ~~```Filter search```: checks to see if your message contains any non neo-friendly words and highlights them for you before you submit so you don't lose your message~~
 * ```A&C notification```: alerts people when a&c occurs
-* ~~```Guild Ad Board Notifier```: alerts when the guild ad board falls too below down~~ 
+* ~~```Guild Ad Board Notifier```: alerts when the guild ad board falls too below down~~
+* ```Safari Portability```: make this available for Mac/Safari users
 
 
 ## how to use:

@@ -7,25 +7,14 @@ A neopets application which gives neoifications.
 * There's also a minute delay when a new post has been made. Will figure out this issue. 
 
 ## additional features for future:
-<<<<<<< HEAD
-* login check error message: checks to see if the user is logged in or not
-* filter search: checks to see if your message contains any non neo-friendly words and highlights them for you before you submit so you don't lose your message
-* a&c notification: alerts people when a&c occurs
-* guild ad board notifier: alerts when the guild ad board falls too below down 
-
-
-## how to use:
-1. download the folder/repo (unzip the file into a folder!)
-=======
 * ```Login check error message```: checks to see if the user is logged in or not
-* ```Filter search```: checks to see if your message contains any non neo-friendly words and highlights them for you before you submit so you don't lose your message
+* ~~```Filter search```: checks to see if your message contains any non neo-friendly words and highlights them for you before you submit so you don't lose your message~~
 * ```A&C notification```: alerts people when a&c occurs
-* ```Guild Ad Board Notifier```: alerts when the guild ad board falls too below down 
+* ~~```Guild Ad Board Notifier```: alerts when the guild ad board falls too below down~~ 
 
 
 ## how to use:
 1. Download the folder/repo. (Unzip the file into a folder!)
->>>>>>> 74ef580ff504f8501fe78b68f2bc8aa86912df4d
 ![alt tag](img/screenshots/step_1.png)
 2. Navigate to ```chrome://extensions``` in your chrome browser.
 ![alt tag](img/screenshots/step_2.png)
@@ -35,8 +24,4 @@ A neopets application which gives neoifications.
 ![alt tag](img/screenshots/step_4.png)
 5. Select the folder we downloaded in Step #1.
 ![alt tag](img/screenshots/step_5.png)
-<<<<<<< HEAD
 6. select ok and viola! neoify is officially running :)
-=======
-6. Select ok and viola! Neoify is officially running. :)
->>>>>>> 74ef580ff504f8501fe78b68f2bc8aa86912df4d

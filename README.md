@@ -1,6 +1,15 @@
 # ![logo](img/neoify-48.png) neoify 
 A neopets application which gives neoifications.
 
+## why:
+Neopets is super outdated, flawed, and full of bugs (ily neopets). For instance, there is no way of knowing when someone has made a post in the guild. Instead, you would have to have the webpage opened in another tab and refresh whenever you feel like it. With busy lives, people of course won't have the patience or time for this.
+
+A solution? A chrome extension that alerts people when someone did make a post!
+
+There's also another issue of the filters when typing messages in Neopets being a super pain. You can't type out words like ```uncle``` which is ridiculous since who would ordinarily think that uncle is a bad word? No one, which is why if you include that word in your message and forget to parse that out, Neopets will take you to an error page and force you to click back where your entire message is gone.
+
+Solution? A chrome extension that copies your messaging as you type and highlights any non-neofriendly words!
+
 ## current features:
 * ```Message Board Notifier``` & ```Guild Ad Board Notifier```: When someone makes a post in the guild or when the guild ad board drops below midway (you can change this as you see fit) on the guild page, you'll get a notification! Let me know if you don't the guild ad board notifier.
 * ```Filter search```: When you get on the guild board, there is a text div to the right of the space where you type in. There is a status message on top that says, "YOUR MESSAGE IS GUCCI" if it's neofriendly but this will change to say, "YOUR MESSAGE ISN'T GOOD!", if it detects you typed a non-neofriendly word/phrase. The application will also mimic what you're typing to the right and highlight parts that are non-neofriendly!

@@ -10,20 +10,20 @@ function getBoards(){
 	$.get(boardLink, function(data) {
 		var elems = $(data).find("span[style='font-weight:normal;']");
 		for (var i = 0; i < elems.length; i++) {
+			let link = elems[i].parentNode;
 			if (elems[i].innerText.includes("MU x HO")) {
-				let link = elems[i].parentNode; //attr["href"];
-				$(link).attr("href");
 				if (i > 20) {
 					notify2($(link).attr("href"));
-					// console.log(elems[i].innerText);
+					return;
 				} 
-				// console.log(i);
-			} else {
-				notify2($(link).attr("href"));
-			}
-			
+				if (i < 20) {
+					return;
+				}
+			} 
 		}
 	});
+
+	notify2($(boardLink).attr("href"));
 }
 
 function notify2(board) {
@@ -34,8 +34,7 @@ function notify2(board) {
 	});
 
 	notification.onclick = function() {
-
-		window.open("http://www.neopets.com/neoboards/" + board);
+		window.open(boardLink);
 	}
 
 }

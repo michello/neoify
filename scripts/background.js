@@ -1,5 +1,5 @@
-let boardLink = 'http://www.neopets.com/neoboards/boardlist.phtml?board=8';
-let guildLink = 'http://www.neopets.com/guilds/guild_board.phtml?id=4168178';
+let boardLink = "http://www.neopets.com/neoboards/boardlist.phtml?board=8";
+let guildLink = "http://www.neopets.com/guilds/guild_board.phtml?id=4168178";
 
 $(function(){
 	setInterval(getBoards, 60000);
@@ -49,17 +49,19 @@ function getPosts() {
 				if (elems[i].parentNode.nodeName == "TD") {
 					var html = elems[i].parentNode.innerHTML;
 					if (html.includes("randomfriend")) {	// elems[i].parentNode.innerText
-						var username = $('a')[3].textContent;
-						if (elems[i].innerText != username) {	
+						var username = elems[3].textContent;
+						if (elems[i].innerText != username) {
 							let post = {
 								username: elems[i].innerText,
-								time: elems[i].parentNode.innerText.substr(-17).substring(0, 6),
+								time: elems[i].parentNode.innerText.substr(-18).substring(0, 7),
 								date: elems[i].parentNode.innerText.substr(-17).substring(6)
 							};
 
 							if (checksIfExists(post) === false){
 								notify(post);
 							};
+
+							
 							let user = elems[i].innerText;	// username
 							let timeDate = elems[i].parentNode.innerText.substr(-17); // date & time
 							let time = timeDate.substring(0, 6);
@@ -95,7 +97,7 @@ function notify(thePost) {
 
 	var notification = new Notification("MuxHo", {
 		icon: "img/neoify-128.png",
-		body: thePost.username + " made a post at " + thePost.date + " on " + thePost.time + "!"
+		body: thePost.username + " made a post at " + thePost.date + " on " + thePost.time + " PST!"
 	});
 
 	notification.onclick = function() {

@@ -49,23 +49,22 @@ function getPosts() {
 				if (elems[i].parentNode.nodeName == "TD") {
 					var html = elems[i].parentNode.innerHTML;
 					if (html.includes("randomfriend")) {	// elems[i].parentNode.innerText
-						
-						let post = {
-							username: elems[i].innerText,
-							time: elems[i].parentNode.innerText.substr(-17).substring(0, 6),
-							date: elems[i].parentNode.innerText.substr(-17).substring(6)
-						};
+						var username = $('a')[3].textContent;
+						if (elems[i].innerText != username) {	
+							let post = {
+								username: elems[i].innerText,
+								time: elems[i].parentNode.innerText.substr(-17).substring(0, 6),
+								date: elems[i].parentNode.innerText.substr(-17).substring(6)
+							};
 
-						if (checksIfExists(post) === false){
-							notify(post);
-						};
-
-						
-						let user = elems[i].innerText;	// username
-						let timeDate = elems[i].parentNode.innerText.substr(-17); // date & time
-						let time = timeDate.substring(0, 6);
-						let date = timeDate.substring(6);
-						
+							if (checksIfExists(post) === false){
+								notify(post);
+							};
+							let user = elems[i].innerText;	// username
+							let timeDate = elems[i].parentNode.innerText.substr(-17); // date & time
+							let time = timeDate.substring(0, 6);
+							let date = timeDate.substring(6);
+						}
 					}
 				}
 			}
